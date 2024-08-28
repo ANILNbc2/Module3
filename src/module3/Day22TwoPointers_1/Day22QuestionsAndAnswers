@@ -1,0 +1,12 @@
+Q : Given a sorted integer array and interger K, find any pair(i,j ) such
+    that A[i] + A[j] = k in O(1) space complexity.
+Ans : Two pointer solution :
+      i = 0, j=n
+      while A[i] + A[j] != k && i<j,
+        if A[i] + A[j] > k, j--
+        if A[i] + A[j] < k, i++
+
+      if (i<>j and A[i] + A[j] == k)
+        found
+      else
+        not found.

@@ -1,4 +1,4 @@
-package Day21BinarySearch_3;
+package module3.Day21BinarySearch_3;
 
 import java.util.Random;
 
