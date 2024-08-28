@@ -1,4 +1,4 @@
-Q : Given a sorted integer array and interger K, find any pair(i,j ) such
+Q1 : Given a sorted integer array and interger K, find any pair(i,j ) such
     that A[i] + A[j] = k in O(1) space complexity.
 Ans : Two pointer solution :
       i = 0, j=n
@@ -10,3 +10,16 @@ Ans : Two pointer solution :
         found
       else
         not found.
+
+Q2 : Given a sorted integer array and interger K, find any pair(i,j ) such
+    that A[j] - A[i] = k in O(1) space complexity.
+Ans : Two pointer solution :
+        i = 0, j=1
+              while A[j] - A[i] != k && i<=n and j <=n,
+                if A[j] - A[i] > k, i++
+                if A[j] - A[i] < k, j++
+
+              if (i<n and j<n and A[j] + A[i] == k)
+                found
+              else
+                not found.
