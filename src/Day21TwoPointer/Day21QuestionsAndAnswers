@@ -1,0 +1,11 @@
+Problem 1 :
+    Search for an element in sorted rotated array with distinct elements.
+Solution 1 :
+    a. Find the min element using binary search.
+    b. Decide left or right half for search element and find it using binary search.
+
+Solution 2 :
+    a. No need to find the min element. Instead use the array as a consisting of 2 parts and search
+    Same solution as previous one, except we directly find the search element.
+
+ Problem 2 :
