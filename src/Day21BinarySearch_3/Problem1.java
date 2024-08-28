@@ -1,4 +1,4 @@
-package Day21TwoPointer;
+package Day21BinarySearch_3;
 
 public class Problem1 {
     public static void execute(Integer[] intArray, Integer numToFind){

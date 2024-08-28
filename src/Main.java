@@ -1,4 +1,4 @@
-import Day21TwoPointer.ExecuteProblemsDay21;
+import Day21BinarySearch_3.ExecuteProblemsDay21;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

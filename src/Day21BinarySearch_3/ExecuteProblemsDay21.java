@@ -1,4 +1,4 @@
-package Day21TwoPointer;
+package Day21BinarySearch_3;
 
 import java.util.Random;
 
