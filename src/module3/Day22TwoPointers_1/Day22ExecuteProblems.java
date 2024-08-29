@@ -21,7 +21,7 @@ public class Day22ExecuteProblems extends ExecuteProblems implements InputForPro
 
         System.out.println("Input array : ");
         display();
-        Problem3.solution(intArray, numToFind);
+        Problem4.solution(intArray);
     }
 
     public Integer[] createInputArray(){

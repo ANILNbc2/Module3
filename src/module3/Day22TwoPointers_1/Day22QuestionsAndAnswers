@@ -33,3 +33,13 @@ Ans : Two pointer solution :
     is k, to find the sub array where you use sum of elements till A[j] instead
     of A[j], add A[j+1] is sum < k and substract A[i] if sum >k.
 
+Q4 : Given a set of walls, define the container to hold max Water between 2
+    walls.
+Ans : Two pointer solution :
+    We will start with left and right pointer as 0 and n-1,
+    find cur water in cntainer as (right - left) * min(A[left], A[right])
+
+    if A[left] > A[right] the decrement right else increment left and continue.
+
+
+
