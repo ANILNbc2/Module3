@@ -23,3 +23,13 @@ Ans : Two pointer solution :
                 found
               else
                 not found.
+
+Q3 : Given an unsorted Integer array and interger k, find any subarray with summ
+    = k.
+Ans : Two pointer solution :
+    We can reduce this to a two pointer solution.
+    Step 1 : For pointers i and j, maintain sum till index j.
+    Step 2 : Follow Solution 2 to get start and end index where the difference
+    is k, to find the sub array where you use sum of elements till A[j] instead
+    of A[j], add A[j+1] is sum < k and substract A[i] if sum >k.
+

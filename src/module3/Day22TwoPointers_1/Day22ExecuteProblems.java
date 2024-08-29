@@ -5,15 +5,31 @@ import module3.ExecuteProblems;
 
 import java.net.Inet4Address;
 
-public class Day22ExecuteProblems extends ExecuteProblems {
+public class Day22ExecuteProblems extends ExecuteProblems implements InputForProblem3{
 
     @Override
     public void execute() {
-        distictSortedInput();
-        Integer numToFind =
-                random.nextInt((int) Math.abs(Constants.inputUpperLimit*0.5));
+        Integer numToFind = 0;
+        if(Constants.RANDOM_INPUT) {
+            createInput();
+            numToFind =
+                    random.nextInt((int) Math.abs(Constants.inputUpperLimit * 3));
+        }else {
+            numToFind =createInputInteger();
+            updateInputArray(createInputArray());
+        }
+
         System.out.println("Input array : ");
         display();
-        Problem2.solution(intArray, numToFind);
+        Problem3.solution(intArray, numToFind);
+    }
+
+    public Integer[] createInputArray(){
+        Integer[] intArray = {1,3,15,10, 20,23,3};
+        return intArray;
+    }
+
+    public Integer createInputInteger(){
+        return 45;
     }
 }

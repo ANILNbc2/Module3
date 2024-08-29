@@ -27,8 +27,22 @@ public abstract class ExecuteProblems {
         }
     }
 
+    public void updateInputArray(Integer[] intArray){
+        this.intArray = new Integer[intArray.length];
+        for(int i=0;i<intArray.length;i++){
+            this.intArray[i] = intArray[i];
+        }
+    }
+
     public void display(){
-        for(int i=0;i<Constants.arraySize;i++){
+        for(int i=0;i<intArray.length;i++){
+            System.out.print(intArray[i] + "    ");
+        }
+        System.out.println();
+    }
+
+    public void display(Integer[] intArray){
+        for(int i=0;i<intArray.length;i++){
             System.out.print(intArray[i] + "    ");
         }
         System.out.println();
