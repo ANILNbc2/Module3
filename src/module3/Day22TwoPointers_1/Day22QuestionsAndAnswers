@@ -41,5 +41,6 @@ Ans : Two pointer solution :
 
     if A[left] > A[right] the decrement right else increment left and continue.
 
-
+Q : Find product of GDC of all subsets of the array
+---------------- Pending ---------------------
 
