@@ -1,0 +1,9 @@
+Q1 : Given an integer array find any pair(i,j) such that A[i]=A[j] and |i-j| is
+    minimum.
+
+Solution :
+    Create an HP of value, greatest Index.
+    for each value, if the value exists, then find greatest index - current
+    index. If the diff is min value, then update min and track the 2 indexes,
+    also update greatest index to current index.
+
