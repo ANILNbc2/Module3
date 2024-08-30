@@ -7,3 +7,8 @@ Solution :
     index. If the diff is min value, then update min and track the 2 indexes,
     also update greatest index to current index.
 
+Q2 : Given an integer array, find the count of all the pairs(i,j)  such that
+    A[i] = A[j]
+Solution : Create hashmap of A[i], count of A[i].
+           parse the hashmap and perform sum(count of A[i]* count of A[i]-1)/2)
+           for total count of pairs.
