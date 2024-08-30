@@ -13,7 +13,7 @@ public class Day23ExecuteProblems extends ExecuteProblems implements InputForPro
         }
         System.out.println("Input array : ");
         display();
-        Problem2.solution(intArray);
+        Problem3.solution(intArray);
     }
 
     public Integer[] createInputArray(){

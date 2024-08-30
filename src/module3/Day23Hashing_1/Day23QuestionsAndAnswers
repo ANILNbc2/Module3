@@ -12,3 +12,16 @@ Q2 : Given an integer array, find the count of all the pairs(i,j)  such that
 Solution : Create hashmap of A[i], count of A[i].
            parse the hashmap and perform sum(count of A[i]* count of A[i]-1)/2)
            for total count of pairs.
+
+Q3 : Given an Integer array, find the longest chain of consequtive elements.
+Solution : Brute force solution : Sort the array and find the longest chain.
+Better solution : We dont need to actually sort the array, we can add to hasmap
+or a hash set as step 1 and then find the longest chain, similar to brute force
+solution.
+In the better solution, we will consider a key only if the key-1 does not exist.
+If key-1 does not exist, then we will find the chain until key+1.. exists.
+
+
+
+
+
