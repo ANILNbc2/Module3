@@ -1,3 +1,21 @@
 Q1 : Given a character array S, as line of words, return the line after
     reversing word by word. SC = O(1).
-Solution : Swap character by character.
+Solution : Swap character by character once you see space.
+
+Q2 : Given a string S, check whether it is  possible too rearrange the
+characters such that there is no boring substring in the string.
+Boring String : length=2, and they are consequtive characters.
+eg : abd : boring substring, converted to adb.. : So true for the question.
+dba : boring substring, converted to bda.. : So true for the question.
+aab : boring substring, cannot be converted as any combination contains a boring
+ substring.
+
+Solution :  Create 2 arrays for even and odd characters.
+            Sort the even and odd character arrays.
+            Check if the min of odd and max of even or min of even and max of
+            odd make a boring substring. If not, we are good, If they do, then
+            we cannot make the required substring.
+
+
+
+
