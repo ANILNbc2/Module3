@@ -1,0 +1,3 @@
+Q1 : Given a character array S, as line of words, return the line after
+    reversing word by word. SC = O(1).
+Solution : Swap character by character.
