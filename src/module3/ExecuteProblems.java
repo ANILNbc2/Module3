@@ -5,7 +5,21 @@ import java.util.Random;
 
 public abstract class ExecuteProblems {
     public Integer[] intArray = new Integer[Constants.arraySize];
+    public String str;
     public Random random = new Random();
+
+    public void createInputString(){
+        char[] characters = new char[Constants.arraySize];
+        for(int i=0;i<Constants.arraySize;i++){
+            characters[i] = (char) (random.nextInt(26)+ 'a');
+        }
+        this.str = new String(characters);
+    }
+
+    public void displayString(){
+        System.out.println("The input String : "+ str);
+    }
+
 
     public void createInput(){
         for(int i=0;i<Constants.arraySize;i++){
@@ -32,6 +46,10 @@ public abstract class ExecuteProblems {
         for(int i=0;i<intArray.length;i++){
             this.intArray[i] = intArray[i];
         }
+    }
+
+    public void updateInputString(String str){
+        this.str = str;
     }
 
     public void display(){

@@ -1,0 +1,28 @@
+Question 1 : Given an input String, find if it is possible to rearrange the
+characters such that it can be representated as concatination of K same strings.
+ie : given String : "bbaabb" and K = 2, we can rearrange String as "abbabb"
+where the string "abb" is repeated K(2) times, hence TRUE.
+
+for same string "bbaabb", if K=3, then FALSE.
+
+Solution :
+    To do this, we will crete a frequency map of all the characters in the
+    String.
+    Once done, if every character freq %k ==0, then rearrangement is possible.
+    else FALSE.
+
+Question 2 : Given a set of points P(x,y) on a 2D plane, find all the
+combination of 3 points which make a right angled triangle and have sides
+parallel to X axis and y axis.
+
+Solution :
+    To do this, we will make 2 HashMaps, 1 for the x axis and 1 for y axis.
+    In the x-axis map, we will maintain list of all points such that ax=bx and
+    ay!=by
+    In the y-axis map, we will maintain list of all points such that ax!=bx and
+    ay=by
+    Parse Xaxis map. For each key, where count of entries in list >1, loop over
+    the list. For each entry in the list, choose y axis of all other points and
+    find count of entries in Yaxis map.
+
+
