@@ -16,6 +16,11 @@ public abstract class ExecuteProblems {
         this.str = new String(characters);
     }
 
+    public String getInputString(){
+        createInputString();
+        return this.str;
+    }
+
     public void displayString(){
         System.out.println("The input String : "+ str);
     }
