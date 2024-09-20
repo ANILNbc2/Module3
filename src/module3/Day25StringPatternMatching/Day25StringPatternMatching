@@ -1,6 +1,7 @@
 Q1 : Given a character array S, as line of words, return the line after
     reversing word by word. SC = O(1).
-Solution : Swap character by character once you see space.
+Solution :  Step 1 : Reverse the string first.
+            Step 2 : Swap character by character once you see space.
 
 Q2 : Given a string S, check whether it is  possible too rearrange the
 characters such that there is no boring substring in the string.
@@ -15,6 +16,9 @@ Solution :  Create 2 arrays for even and odd characters.
             Check if the min of odd and max of even or min of even and max of
             odd make a boring substring. If not, we are good, If they do, then
             we cannot make the required substring.
+
+
+Q3 :
 
 
 
