@@ -1,0 +1,44 @@
+Q1 : Given a string S of lower case english characters, find Z[k] for a given
+index k such that
+Z[[k] = length of longest substring of S, starting from k which is also the
+prefix of S starting from 0.
+eg : xyzaxyzaxyb for k = 4,
+
+x y z a x y z a x y b
+0 1 2 3 4 5 6 7 8 9 10
+
+Substring starting from k = xyzaxyb, length of longest substring :
+Substring starting from 0 to index 5 : xyzaxy matches substring from k(4) to 9.
+
+Solution : Use 2 pointers and a counter.
+
+Q2 : Q1 + find Z[k] for all k st 0<k<n. (Z Algo)
+Solution : This action, if performed as before will require some extra
+comparisions.
+To improve the performance, we need to use already found information.
+So solution is :
+
+
+Chars : x x y a x x y a z x x   y  a  x  x  y  a  x  z
+Index : 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+zVal  : X 1 0 0 4 1 0 0 0 8 1   0  0  5  1  0  0  1  0
+                          L                    R
+
+Initially, when no info is available, use brute force as step1.
+For i, 0<i<n ,
+z[i] = z[i-L] if (i + (i-l) <= R) else start bruteforce as before again.
+eg at index 13, i=13, L=9 and R=16, 13 + z(13-9) = 13 + z[4] = 13+4 = 17 > 16(R)
+ so
+ we will
+start brute force again as before.
+for i=10, L=8 and R=16, i + z[i-L] = 9+z[9-8] = 9+1 = 10 < 16(R).
+So, we will copy z[i] = z[i-L].
+
+
+
+
+
+
+
+
+
